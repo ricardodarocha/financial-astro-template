@@ -26,7 +26,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-  site: 'https://4g.github.io',
+  site: 'https://ricardodarocha.github.io',
   base: 'financial-astro-template',
 
   integrations: [
