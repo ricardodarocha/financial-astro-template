@@ -10,7 +10,7 @@ import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from '@playform/compress';
 
-import astrowind from './vendor/integration';
+import Financial from './vendor/integration';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter.mjs';
 
@@ -26,6 +26,8 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
+  site: 'https://4g.github.io',
+  base: 'financial-astro-template',
 
   integrations: [
     tailwind({
@@ -69,7 +71,7 @@ export default defineConfig({
       Logger: 1,
     }),
 
-    astrowind({
+    Financial({
       config: "./src/config.yaml"
     }),
   ],
